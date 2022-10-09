@@ -9,9 +9,6 @@ function getDate() {
     year: "numeric",
     month: "long",
     day: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
   };
   let date = new Date().toLocaleDateString("en-us", options).split(" "); //remove time from date format
 
@@ -22,7 +19,8 @@ function DateTime() {
   return (
     <div className="date-time">
       <h2>{getDate()}</h2>
-      <Clock format={"HH:mm:ss"} ticking={true} />
+      <Clock format={"hh:mm:ss"} ticking={true} />
+      <h2 className="am-pm">{new Date().getHours() < 12 ? "AM" : "PM"}</h2>
     </div>
   );
 }
