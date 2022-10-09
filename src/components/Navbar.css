@@ -1,0 +1,70 @@
+/*--------NAVBAR START--------*/
+header {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    z-index: 2;
+}
+
+nav {
+    background-color: rgb(50, 138, 202);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
+    font-size: 1.25rem;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+    margin-left: 150px;
+    color:rgb(255, 255, 255);
+    transition:  color ease-in-out 0.3s;
+}
+
+.logo:hover {
+    color:rgb(241, 210, 31)
+}
+
+ul {
+    display: flex;
+    padding-right: 150px;
+    align-items: center;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    height: 100%;
+    transition: background-color ease-in-out 0.3s;
+  
+}
+
+li a {
+    text-decoration: none;
+    color: #eee; 
+    padding: 2rem;
+    font-size: 1.5em;
+    display: flex;
+    align-self: center;
+    transition: color ease-in-out 0.3s;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.452);
+    
+}
+
+.active-page {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/*--------NAVBAR END--------*/

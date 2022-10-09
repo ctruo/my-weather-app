@@ -1,0 +1,22 @@
+.dashboard {
+    margin: 2% 9%;
+    border-radius: 0.5rem;
+    padding: 25px 200px;
+}
+
+.dash-title {
+    font-weight: 600;
+    font-size: 3.75rem;
+    color: #eee;
+}
+
+.card-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.dashboard-card-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transform: scale(0.8);
+}

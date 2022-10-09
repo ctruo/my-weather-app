@@ -1,0 +1,48 @@
+.dashboard-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 4px 4px 10px -4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 450px;
+    border-radius: 0.75rem;
+    margin-bottom: 15%;
+    color: #eee;
+    text-align: center;
+    position: relative;
+    padding: 0 10px 20px;
+}
+
+.dashboard-card img {
+    margin-top: -50px;
+    transform: scale(0.75);
+}
+
+.dashboard-card-desc {
+    margin-top: -50px;
+}
+
+.dashboard-card-desc h2 {
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+.dashboard-card-desc p {
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.delete-button {
+    position: absolute;
+    top:5%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: color ease-in-out 0.2s;
+}
+
+.delete-button:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
