@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ctruo/my-weather-app/static/css/main.10704fe2.css",
+    "main.js": "/ctruo/my-weather-app/static/js/main.c79dd4e7.js",
+    "index.html": "/ctruo/my-weather-app/index.html",
+    "main.10704fe2.css.map": "/ctruo/my-weather-app/static/css/main.10704fe2.css.map",
+    "main.c79dd4e7.js.map": "/ctruo/my-weather-app/static/js/main.c79dd4e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10704fe2.css",
+    "static/js/main.c79dd4e7.js"
+  ]
+}
