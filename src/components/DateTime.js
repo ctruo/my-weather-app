@@ -26,3 +26,4 @@ function DateTime() {
 }
 
 export default DateTime;
+export { getDate };

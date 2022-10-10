@@ -1,0 +1,34 @@
+.initial {
+   margin: 0 auto;
+   width: 100vw;
+   text-align: center;
+   position: relative;
+}
+
+.initial-time {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+
+.initial h1 {
+    font-size: 7rem;
+    color: #eee;
+    margin: 0 28%;
+}
+
+.initial-ampm {
+    font-size: 7rem;
+    color: #eee;
+    position: absolute;
+    right: 32%;
+}
+
+.initial-date {
+    color: #eee;
+    font-size:4rem;
+    margin-top: 30px;
+}
