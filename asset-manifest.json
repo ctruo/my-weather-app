@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/ctruo/my-weather-app/static/css/main.10704fe2.css",
-    "main.js": "/ctruo/my-weather-app/static/js/main.c79dd4e7.js",
-    "index.html": "/ctruo/my-weather-app/index.html",
-    "main.10704fe2.css.map": "/ctruo/my-weather-app/static/css/main.10704fe2.css.map",
-    "main.c79dd4e7.js.map": "/ctruo/my-weather-app/static/js/main.c79dd4e7.js.map"
+    "main.css": "/my-weather-app/static/css/main.10704fe2.css",
+    "main.js": "/my-weather-app/static/js/main.c79dd4e7.js",
+    "index.html": "/my-weather-app/index.html",
+    "main.10704fe2.css.map": "/my-weather-app/static/css/main.10704fe2.css.map",
+    "main.c79dd4e7.js.map": "/my-weather-app/static/js/main.c79dd4e7.js.map"
   },
   "entrypoints": [
     "static/css/main.10704fe2.css",
