@@ -31,7 +31,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route
-          path="/my-weather-app/"
+          path="/"
           element={
             <Home
               weatherData={weatherData}
@@ -44,7 +44,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/my-weather-app/my-dashboard"
+          path="/my-dashboard"
           element={
             <Dashboard dashboard={dashboard} setDashboard={setDashboard} />
           }

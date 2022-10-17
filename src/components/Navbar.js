@@ -35,7 +35,7 @@ function Navbar() {
   );
 }
 
-//custom components to denote active page in navbar
+//custom components to show style for active page in navbar
 function NavLink(props) {
   const { to, text } = props;
   const resolvedPath = useResolvedPath(to);

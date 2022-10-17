@@ -44,10 +44,10 @@ function MainCard(props) {
         <div className="main-display">
           <div className="main-details">
             <h1 className="today">Today</h1>
-            <img src={iconURL} alt="weather-icon" />
             <div className="temp-description">
               <h2>{`${temp}\u00B0 F`}</h2>
-              <p>{desc.charAt(0).toUpperCase() + desc.slice(1)}</p>
+              <p>{desc.charAt(0).toUpperCase() + desc.slice(1)}</p>{" "}
+              <img src={iconURL} alt="weather-icon" />
             </div>
           </div>
           <div className="more-details">
@@ -61,16 +61,14 @@ function MainCard(props) {
           </div>
         </div>
         <div className="forecast-display">
-          <div>
-            <div className="forecast-heading">
-              <h2 className="forecast">5-Day Forecast</h2>
-              <span className="forecast-line"></span>
-            </div>
-
-            {forecastData.map((data) => (
-              <ForecastCard key={data.dt} data={data} />
-            ))}
+          <div className="forecast-heading">
+            <h2 className="forecast">5-Day Forecast</h2>
+            <span className="forecast-line"></span>
           </div>
+
+          {forecastData.map((data) => (
+            <ForecastCard key={data.dt} data={data} />
+          ))}
         </div>
       </div>
     </div>

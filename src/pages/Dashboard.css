@@ -1,7 +1,7 @@
 .dashboard {
-    margin: 2% 9%;
+    margin: 5% auto;
     border-radius: 0.5rem;
-    padding: 25px 200px;
+    padding: 25px 15%;
     position: relative;
 }
 
@@ -9,6 +9,7 @@
     font-weight: 600;
     font-size: 3.75rem;
     color: #eee;
+    white-space: nowrap;
 }
 
 .card-display {
@@ -26,8 +27,14 @@
     position: absolute;
     color:#eee;
     font-size: 2.75rem;
-    width: 80%;
-    line-height: 5rem;
+    width: 68%;
+    line-height: 7rem;
+    margin-top: -40px;
+}
+
+/*THIS IS TO SEPARATE SENTENCES WITH A NEWLINE*/
+.no-card-display span {
+    display: block;
 }
 
 .no-card-display h2 {

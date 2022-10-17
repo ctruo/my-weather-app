@@ -1,30 +1,27 @@
 .initial {
    margin: 0 auto;
-   width: 100vw;
    text-align: center;
-   position: relative;
+  
 }
 
 .initial-time {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    width: 50%;
-    margin: 0 auto;
+    display: flex;
     align-items: center;
-    
+    justify-content: center;
 }
 
-.initial h1 {
+.initial-clock {
     font-size: 7rem;
+    font-weight: 600;
     color: #eee;
-    margin: 0 28%;
+    position: relative;
+    width: 500px;
 }
 
 .initial-ampm {
+    margin-left: 20px;
     font-size: 7rem;
     color: #eee;
-    position: absolute;
-    right: 32%;
 }
 
 .initial-date {

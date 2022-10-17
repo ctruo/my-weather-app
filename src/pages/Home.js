@@ -39,9 +39,9 @@ function InitialDisplay() {
   return (
     <div className="initial">
       <div className="initial-time">
-        <h1>
+        <div className="initial-clock">
           <Clock format={"hh:mm:ss"} ticking={true} />
-        </h1>
+        </div>
         <h2 className="initial-ampm">
           {new Date().getHours() < 12 ? "AM" : "PM"}
         </h2>

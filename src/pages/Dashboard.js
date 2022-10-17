@@ -23,11 +23,14 @@ function noCardDisplay() {
   const string = (
     <div className="no-card-display">
       <h2>
-        You currently have no cards added. Add some{" "}
-        <Link className="no-card-display-link" to="/">
-          here
-        </Link>{" "}
-        !
+        <span>You currently have no cards added.</span>
+        <span>
+          Add some{" "}
+          <Link className="no-card-display-link" to="/">
+            here
+          </Link>{" "}
+          !
+        </span>
       </h2>
     </div>
   );
@@ -40,7 +43,7 @@ function Dashboard(props) {
   return (
     <div className="dashboard">
       <h1 className="dash-title">My Dashboard</h1>
-      <DateTime />
+      <DateTime className="dash-date" />
       <div className="card-display">
         {filteredData.length === 0 ? noCardDisplay() : null}
         {filteredData.map((data) => (

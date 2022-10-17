@@ -4,21 +4,23 @@
     display: flex;
     align-items: center;
     gap: 3%;
-    position: relative;
-    width: 60%;
+    width: 70%;
+    white-space: nowrap;
 }
 
-/*----time is bolded----*/
+
 .date-time * {
     font-size: 2rem;
     font-weight: 600;
 }
 
-.date-time :nth-child(1) {
+/*----date is not bolded----*/
+.date {
     font-weight: 400;
 }
 
-.am-pm {
-    position: absolute;
-    right: 13%;
+.clock {
+    position: relative;
+    margin-left: 15px;
+    width: 120px;
 }
