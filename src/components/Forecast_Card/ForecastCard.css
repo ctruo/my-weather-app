@@ -28,6 +28,7 @@
     margin-left: 25px;
 }
 
+/*--------Tablet--------*/
 @media screen and (max-width: 1024px) {
     .card {
         padding: 30px 5%;

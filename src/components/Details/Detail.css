@@ -6,6 +6,7 @@
     font-size: 0.9rem;
 }
 
+/*--------Tablet--------*/
 @media screen and (max-width: 1024px) {
     .container {
         font-size: 0.65rem;

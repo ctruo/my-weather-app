@@ -53,6 +53,7 @@
     color: rgba(255, 255, 255, 0.75);
 }
 
+/*--------Tablet--------*/
 @media screen and (max-width: 1024px) {
     .dashboard-card {
         height: 425px;

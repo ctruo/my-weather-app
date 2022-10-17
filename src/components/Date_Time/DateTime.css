@@ -27,7 +27,7 @@
 .clock {
     position: relative;
     margin-left: 15px;
-    width: 135px;
+    width: 145px;
 }
 
 /*-------Prevents overflow of clock--------*/
@@ -43,5 +43,36 @@
 
     .clock {
         margin-left: 0;
+    }
+}
+
+/*--------Phone--------*/
+@media screen and (max-width: 600px) {
+    .date-time * {
+        font-size: 1.5rem;    
+    }
+
+    .date {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .clock {
+        width: 115px;   
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .date-time * {
+        font-size: 1.2rem;    
+    }
+
+    .date {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .clock {
+        width: 95px;   
     }
 }
