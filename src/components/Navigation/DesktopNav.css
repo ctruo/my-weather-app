@@ -28,6 +28,7 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+/*Hide desktop navbar for mobile*/
 @media screen and (max-width: 1024px) {
     .desktop-nav { 
         display: none;

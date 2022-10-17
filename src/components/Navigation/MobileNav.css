@@ -41,13 +41,13 @@
     text-decoration: none;
     color: #eee;
     padding: 1.5rem;
-    font-size: 1.5em;
+    font-size: 1.25em;
     display: flex;
     align-self: center;
     transition: color ease-in-out 0.3s;
 }
 
-
+/*Hide mobile navbar for desktop*/
 @media screen and (min-width: 1024px) {
     .mobile-nav {
         display: none;
