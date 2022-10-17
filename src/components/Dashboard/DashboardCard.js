@@ -1,6 +1,6 @@
 import React from "react";
 import "./DashboardCard.css";
-import convertTime from "../converTimeFunction";
+import convertTime from "../Helper_Functions/converTimeFunction";
 import Detail from "../Details/Detail";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";

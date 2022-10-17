@@ -3,7 +3,7 @@ import "./MainCard.css";
 import Detail from "../Details/Detail";
 import ForecastCard from "../Forecast_Card/ForecastCard";
 import DateTime from "../Date_Time/DateTime";
-import convertTime from "../converTimeFunction";
+import convertTime from "../Helper_Functions/converTimeFunction";
 
 function MainCard(props) {
   const { weatherData, forecastData, setDashboard } = props;

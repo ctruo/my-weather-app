@@ -1,0 +1,56 @@
+.mobile-nav {
+    position: relative;
+    margin-right: 70px;
+    height: 100%;
+}
+
+.hamburger {
+    border: none;
+    padding: 10px;
+    color: #eee;
+    background-color: rgba(238, 238, 238, 0);
+    margin-top: 10px;
+}
+
+.mobile-list-line {
+    display: block;
+    height: 5px;
+    width:92%;
+    margin: 0 auto 20px auto;
+    background-color: rgba(255, 251, 251, 0.6);
+}
+
+.mobile-nav-list {
+    margin-top: 17px;
+    background-color: rgb(42, 114, 165);
+    box-shadow: -5px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: -5px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: -5px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    width:300px;
+    padding: 25px 0 0 10px;
+    position: absolute;
+    right: -55px;
+}
+
+.mobile-nav-list li {
+    list-style: none;
+}
+
+.mobile-nav-list li a {
+    text-decoration: none;
+    color: #eee;
+    padding: 1.5rem;
+    font-size: 1.5em;
+    display: flex;
+    align-self: center;
+    transition: color ease-in-out 0.3s;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .mobile-nav {
+        display: none;
+    }
+
+}
