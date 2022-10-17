@@ -1,7 +1,7 @@
 import React from "react";
-import Searchbar from "../components/Searchbar";
-import MainCard from "../components/MainCard";
-import { getDate } from "../components/DateTime";
+import Searchbar from "../components/Searchbar/Searchbar";
+import MainCard from "../components/Main_Card/MainCard";
+import { getDate } from "../components/Date_Time/DateTime";
 import Clock from "react-live-clock";
 import "./Home.css";
 

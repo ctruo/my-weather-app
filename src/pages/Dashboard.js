@@ -1,7 +1,7 @@
 import React from "react";
-import "./Dashboard.css";
-import DashboardCard from "../components/DashboardCard";
-import DateTime from "../components/DateTime";
+import "../components/Dashboard/Dashboard.css";
+import DashboardCard from "../components/Dashboard/DashboardCard";
+import DateTime from "../components/Date_Time/DateTime";
 import { Link } from "react-router-dom";
 
 function removeDuplicates(data) {
@@ -42,8 +42,10 @@ function Dashboard(props) {
 
   return (
     <div className="dashboard">
-      <h1 className="dash-title">My Dashboard</h1>
-      <DateTime className="dash-date" />
+      <div className="dash-header">
+        <h1 className="dash-title">My Dashboard</h1>
+        <DateTime />
+      </div>
       <div className="card-display">
         {filteredData.length === 0 ? noCardDisplay() : null}
         {filteredData.map((data) => (

@@ -5,6 +5,10 @@
     position: relative;
 }
 
+.dash-header {
+    margin-left: 10px;
+}
+
 .dash-title {
     font-weight: 600;
     font-size: 3.75rem;
@@ -17,12 +21,6 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-.dashboard-card-details {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    transform: scale(0.8);
-}
-
 .no-card-display {
     position: absolute;
     color:#eee;
@@ -32,7 +30,7 @@
     margin-top: -40px;
 }
 
-/*THIS IS TO SEPARATE SENTENCES WITH A NEWLINE*/
+/*SEPARATE SENTENCES WITH A NEWLINE*/
 .no-card-display span {
     display: block;
 }
@@ -49,4 +47,25 @@
 
 .no-card-display-link:hover {
     color: #eee;
+}
+
+/*--------Prevents squish cards--------*/
+@media screen and (max-width: 1250px) {
+    .card-display {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dashboard {
+        padding: 25px 4% 25px;
+    }
+
+    .no-card-display {
+        font-size: 2rem;
+        width: 90%;
+        line-height: 7rem;
+        margin-top: -40px;
+    } 
 }

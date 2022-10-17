@@ -17,9 +17,28 @@
     width: 20%;
 }
 
+.card img {
+    margin-left: 25px;
+}
+
 .details {
     display: flex;
     justify-content: space-around;
     flex-grow: 1;
-    margin-left: 50px;
+    margin-left: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        padding: 30px 5%;
+    }
+
+    .card img {
+        margin-left: 50px;
+    }
+
+    .details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

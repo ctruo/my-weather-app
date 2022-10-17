@@ -1,9 +1,9 @@
 import React from "react";
 import "./MainCard.css";
-import Detail from "./Detail";
-import ForecastCard from "./ForecastCard";
-import DateTime from "./DateTime";
-import convertTime from "./converTimeFunction";
+import Detail from "../Details/Detail";
+import ForecastCard from "../Forecast_Card/ForecastCard";
+import DateTime from "../Date_Time/DateTime";
+import convertTime from "../converTimeFunction";
 
 function MainCard(props) {
   const { weatherData, forecastData, setDashboard } = props;
@@ -31,13 +31,6 @@ function MainCard(props) {
           <h1>{city + ","}</h1>
           <h1>{country}</h1>
         </div>
-        <button
-          className="dash-button"
-          onClick={() => setDashboard([...dashboard, weatherData])} //on click append current main display data to dashboard
-          type="submit"
-        >
-          Add to MyDashboard
-        </button>
       </div>
       <DateTime />
       <div className="content">
@@ -51,6 +44,13 @@ function MainCard(props) {
             </div>
           </div>
           <div className="more-details">
+            <button
+              className="dash-button"
+              onClick={() => setDashboard([...dashboard, weatherData])} //on click append current main display data to dashboard
+              type="submit"
+            >
+              Add to MyDashboard
+            </button>
             <Detail attribute={"High"} info={`${tempMax}\u00B0 F`} />
             <Detail attribute={"Wind Speed"} info={`${windSpeed} m/s`} />
             <Detail attribute={"Sunrise"} info={convertTime(sunrise)} />

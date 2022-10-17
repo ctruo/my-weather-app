@@ -1,7 +1,7 @@
 import React from "react";
 import "./DashboardCard.css";
-import convertTime from "./converTimeFunction";
-import Detail from "./Detail";
+import convertTime from "../converTimeFunction";
+import Detail from "../Details/Detail";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 
@@ -37,7 +37,7 @@ function DashboardCard(props) {
   return (
     <div className="dashboard-card">
       <button className="delete-button" onClick={handleDelete}>
-        <FontAwesomeIcon className={"fa-2x"} icon={faX} />
+        <FontAwesomeIcon className={"fa-xl"} icon={faX} />
       </button>
 
       <h1 className="city">{city}</h1>
