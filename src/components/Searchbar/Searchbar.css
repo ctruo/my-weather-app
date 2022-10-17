@@ -50,3 +50,27 @@
 }
 
 /*--------SEARCH BAR END--------*/
+
+@media screen and (max-width: 600px) {
+    #searchField {
+        transform: scale(0.7);
+        margin-left: -50px;
+    }
+
+    .searchBar button {
+        transform: scale(0.7);
+        margin-left: -100px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #searchField {
+        transform: scale(0.5);
+        margin-left: -75px;
+    }
+
+    .searchBar button {
+        transform: scale(0.5);
+        margin-left: -130px;
+    }
+}

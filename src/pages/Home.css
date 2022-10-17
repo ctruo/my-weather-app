@@ -25,6 +25,53 @@
 
 .initial-date {
     color: #eee;
-    font-size:4rem;
-    margin-top: 30px;
+    font-size: 4rem;
+    margin-top: -25px;
+}
+
+/*--------Tablet--------*/
+@media screen and (max-width: 1024px) {
+    .initial-clock {
+        font-size: 5rem;
+        width: 400px;
+    }
+
+    .initial-ampm {
+        font-size: 5rem;
+    }
+
+    .initial-date {
+        font-size: 2.75rem;
+    }
+}
+
+/*--------Phone--------*/
+@media screen and (max-width: 600px) {
+    .initial-clock {
+        font-size: 3.75rem;
+        width: 300px;
+    }
+
+    .initial-ampm {
+        font-size: 3.75rem;
+    }
+
+    .initial-date {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .initial-clock {
+        font-size: 2.75rem;
+        width: 225px;
+    }
+
+    .initial-ampm {
+        font-size: 2.75rem;
+    }
+
+    .initial-date {
+        font-size: 1.15rem;
+    }
 }
