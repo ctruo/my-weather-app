@@ -1,15 +1,20 @@
 /*--------SEARCH BAR START--------*/
 .searchBar {
     margin: 75px;
-    text-align: center;
+}
 
+#searchForm {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
 }
 
 #searchField {
     border-style: none;
     border-radius: 5rem 0 0 5rem;
-    width: 40%;
-    height: 50px;
+    width: 700px;
+    height: 100%;
     padding-left: 4rem;
     font-size: 1.75rem;
     box-sizing: border-box;
@@ -30,10 +35,9 @@
     background-color: rgb(235, 229, 229);
     border-style: none;
     border-radius: 0 5rem 5rem 0;
-    height: 50px;
+    height: 100%;
     padding: 0 40px;
     margin-left: -4px;
-    margin-top: -10px;
     vertical-align: middle;
     box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.44);
     -webkit-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.44);
@@ -46,3 +50,27 @@
 }
 
 /*--------SEARCH BAR END--------*/
+
+@media screen and (max-width: 600px) {
+    #searchField {
+        transform: scale(0.7);
+        margin-left: -50px;
+    }
+
+    .searchBar button {
+        transform: scale(0.7);
+        margin-left: -100px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #searchField {
+        transform: scale(0.5);
+        margin-left: -75px;
+    }
+
+    .searchBar button {
+        transform: scale(0.5);
+        margin-left: -130px;
+    }
+}

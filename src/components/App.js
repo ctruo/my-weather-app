@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Home from "../pages/Home";
 import Dashboard from "../pages/Dashboard";
-import Navbar from "./Navbar";
+import Navbar from "./Navigation/Navbar";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route
-          path="/my-weather-app/"
+          path="/"
           element={
             <Home
               weatherData={weatherData}
@@ -44,7 +44,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/my-weather-app/my-dashboard"
+          path="/my-dashboard"
           element={
             <Dashboard dashboard={dashboard} setDashboard={setDashboard} />
           }

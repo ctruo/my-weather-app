@@ -1,0 +1,105 @@
+.dashboard {
+    margin: 5% auto;
+    border-radius: 0.5rem;
+    padding: 25px 15%;
+    position: relative;
+}
+
+.dash-header {
+    margin-left: 10px;
+}
+
+.dash-title {
+    font-weight: 600;
+    font-size: 3.75rem;
+    color: #eee;
+    white-space: nowrap;
+}
+
+.card-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.no-card-display {
+    position: absolute;
+    color:#eee;
+    font-size: 2.75rem;
+    width: 68%;
+    line-height: 5rem;
+    margin-top: -40px;
+    margin-left: 10px;
+}
+
+/*SEPARATE SENTENCES WITH A NEWLINE*/
+.no-card-display span {
+    display: block;
+    margin-top: 50px;
+}
+
+.no-card-display h2 {
+    font-weight: 400;
+}
+
+.no-card-display-link {
+    color:rgb(235, 210, 101);
+    font-weight: 500;
+    transition: color ease-in-out 0.45s;
+}
+
+.no-card-display-link:hover {
+    color: #eee;
+}
+
+/*--------Prevents card squishing--------*/
+@media screen and (max-width: 1250px) {
+    .card-display {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*--------Tablet--------*/
+@media screen and (max-width: 1024px) {
+    .dashboard {
+        padding: 25px 4% 25px;
+    }
+
+    .no-card-display {
+        font-size: 2rem;
+        width: 90%;
+        line-height: 3rem;
+        margin-top: -40px;
+    } 
+}
+
+/*--------Phone--------*/
+@media screen and (max-width: 600px) {
+    .dash-title {
+        font-size: 2.5rem;
+    }
+
+    .dashboard {
+        padding: 25px 4% 25px;
+    }
+
+    .card-display {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .no-card-display {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .dash-title {
+        font-size: 2rem;
+    }
+
+    .no-card-display {
+        font-size: 1.15rem;
+        line-height: 2rem;
+    }
+}

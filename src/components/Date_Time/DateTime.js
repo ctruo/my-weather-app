@@ -18,9 +18,11 @@ function getDate() {
 function DateTime() {
   return (
     <div className="date-time">
-      <h2>{getDate()}</h2>
-      <Clock format={"hh:mm:ss"} ticking={true} />
-      <h2 className="am-pm">{new Date().getHours() < 12 ? "AM" : "PM"}</h2>
+      <h2 className="date">{getDate()}</h2>
+      <div className="time">
+        <Clock className="clock" format={"hh:mm:ss"} ticking={true} />
+        <h2 className="am-pm">{new Date().getHours() < 12 ? "AM" : "PM"}</h2>
+      </div>
     </div>
   );
 }

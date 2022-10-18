@@ -3,7 +3,7 @@ header {
     position: sticky;
     top: 0;
     width: 100vw;
-    z-index: 2;
+    z-index: 999;
 }
 
 nav {
@@ -24,7 +24,7 @@ nav {
 .logo {
     display:flex;
     align-items: center;
-    margin-left: 150px;
+    margin-left: 5%;
     color:rgb(255, 255, 255);
     transition:  color ease-in-out 0.3s;
 }
@@ -32,38 +32,5 @@ nav {
 .logo:hover {
     color:rgb(235, 210, 101);
 }
-
-ul {
-    display: flex;
-    padding-right: 150px;
-    align-items: center;
-    margin: 0;
-}
-
-li {
-    list-style: none;
-    height: 100%;
-    transition: background-color ease-in-out 0.3s;
-  
-}
-
-li a {
-    text-decoration: none;
-    color: #eee; 
-    padding: 2rem;
-    font-size: 1.5em;
-    display: flex;
-    align-self: center;
-    transition: color ease-in-out 0.3s;
-}
-
-li:hover {
-    background-color: rgba(255, 255, 255, 0.452);
-}
-
-.active-page {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
 
 /*--------NAVBAR END--------*/

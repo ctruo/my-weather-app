@@ -1,0 +1,37 @@
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    margin: 0 5%;
+}
+
+.desktop-nav li {
+    list-style: none;
+    height: 100%;
+    transition: background-color ease-in-out 0.3s;
+}
+
+.desktop-nav li a {
+    text-decoration: none;
+    color: #eee;
+    padding: 2rem;
+    font-size: 1.5em;
+    display: flex;
+    align-self: center;
+    transition: color ease-in-out 0.3s;
+}
+
+.desktop-nav li:hover {
+    background-color: rgba(255, 255, 255, 0.452);
+}
+
+.desktop-nav .active-page {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*Hide desktop navbar for mobile*/
+@media screen and (max-width: 1024px) {
+    .desktop-nav {
+        display: none;
+    }
+
+}

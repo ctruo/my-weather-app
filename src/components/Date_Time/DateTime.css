@@ -1,0 +1,78 @@
+.date-time {
+    margin: -50px 0 40px;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    width: 70%;
+    white-space: nowrap;
+}
+
+
+.date-time * {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/*----date is not bolded----*/
+.date {
+    font-weight: 400;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.clock {
+    position: relative;
+    margin-left: 15px;
+    width: 145px;
+}
+
+/*-------Prevents overflow of clock--------*/
+@media screen and (max-width: 700px) {
+    .date-time {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .time {
+        margin-top: -50px;
+    }
+
+    .clock {
+        margin-left: 0;
+    }
+}
+
+/*--------Phone--------*/
+@media screen and (max-width: 600px) {
+    .date-time * {
+        font-size: 1.5rem;    
+    }
+
+    .date {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .clock {
+        width: 115px;   
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .date-time * {
+        font-size: 1.2rem;    
+    }
+
+    .date {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .clock {
+        width: 95px;   
+    }
+}

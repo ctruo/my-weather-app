@@ -1,0 +1,231 @@
+/*--------CARD START--------*/
+.main-card {
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    padding: 25px 10%;
+    white-space: nowrap;
+}
+
+/*--------Card Top---------*/
+
+
+/*--------Contains location, date/time--------*/
+.content {
+    justify-content: space-between;
+}
+
+.card-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.location {
+    color: #eee;
+    display: flex;
+}
+
+.location h1 {
+    font-size: 3.75rem;   
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+
+/*--------Content---------*/
+.main-display {
+    display: flex;
+    gap: 2%;
+    height: 400px;
+}
+
+/*--------Display with icon and temp and conditions--------*/
+.main-details {  
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 4px 4px 10px -4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.1);
+    color: #eee;
+    display: flex;
+    position: relative;
+    z-index: -1;
+    overflow: hidden; /*FIX*/
+    padding-right: 7%;
+    width: 300px;
+}
+
+.today {
+    font-size: 3rem;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.temp-description {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    
+}
+
+.temp-description h2 {
+    font-size: 2.75rem;
+    font-weight: 500;
+    margin-top: -50px;
+}
+
+.temp-description p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: -40px;
+}
+
+.temp-description img {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+}
+
+/*--------Extra details (wind speed, rain, max, min, etc.)--------*/
+.more-details {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 4px 4px 10px -4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: grid;
+    flex-grow: 100;
+    grid-gap: 7%;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 7%;
+    position: relative;
+}
+
+.dash-button {
+    background: none;
+    border: 3px solid #eee;
+    border-radius: 5rem;
+    box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 4px 4px 10px -4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.2);
+    color: #eee;
+    cursor: pointer;
+    font-size: 1.3rem;
+    height: 50px;
+    padding: 10px 50px;
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    transition: background-color ease-in-out 0.4s;
+}
+
+.dash-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*---------Forecast-------*/
+.forecast {
+    color:#eee;
+    font-size: 2.75rem;
+}
+
+.forecast-heading {
+    align-items: center;
+    display: flex;
+    gap: 2%;
+    margin-top: 50px; 
+}
+
+.forecast-line {
+    background-color: rgba(255, 255, 255, 0.596);
+    box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 4px 4px 10px -4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.2);
+    flex-grow: 100;
+    height:5px;
+}
+
+/*------CARD END------*/
+
+
+/*--------Tablet--------*/
+@media screen and (max-width: 1024px) {
+    .main-card {
+        padding: 0 4%;
+    }
+
+    .dash-button {
+        position: absolute;
+        left: 50%;
+        top: 15px;
+        transform: translate(-50%);
+        width: fit-content;
+        font-size: 1rem;
+        padding: 5px 25px;
+    }
+
+    .more-details {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 80px 50px 30px;
+    }
+}
+
+/*--------Phone--------*/
+@media screen and (max-width: 600px) {
+    .main-card {
+        margin-top: -50px;
+    }
+
+   .location h1 {
+        font-size: 3rem;
+   }
+
+   .main-display {
+        display: grid;
+        grid-template-columns: 1fr;
+   }
+
+   .main-details {
+        width: 100%;
+        height: 400px;
+        padding-right: 0;
+        margin-bottom: 15px;
+   }
+
+   .more-details {
+        height: 400px;
+        padding: 5%;
+        padding-bottom: 15%;
+   }
+
+   .dash-button {
+        top: 325px;
+        font-size: 0.75rem;
+   }
+
+   .forecast {
+        margin-top: 400px;
+   }
+
+   .forecast-line {
+        height: 0;
+   }
+}
+
+@media screen and (max-width: 420px) {
+    .main-card {
+        margin-top: -75px;
+    }
+
+    .location h1 {
+        font-size: 2rem;
+   }
+
+   .more-details {
+    padding-bottom: 30%;
+   }
+}

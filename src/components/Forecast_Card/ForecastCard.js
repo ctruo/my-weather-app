@@ -1,6 +1,6 @@
 import React from "react";
 import "./ForecastCard.css";
-import Detail from "./Detail";
+import Detail from "../Details/Detail";
 
 function ForecastCard(props) {
   const {
