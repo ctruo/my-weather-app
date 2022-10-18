@@ -30,7 +30,7 @@
     -moz-box-shadow: -5px 1px 5px 0px rgba(0, 0, 0, 0.1);
     height: 100vh;
     width:300px;
-    padding: 25px 10px 0 10px;
+    padding: 25px 0;
     position: absolute;
     right: -34px;
     box-sizing: border-box;
@@ -44,7 +44,8 @@
     text-decoration: none;
     color: #eee;
     padding: 1.5rem;
-    font-size: 1.25em;
+    margin-left: 10px;
+    font-size: 1.15em;
     display: flex;
     align-self: center;
     transition: color ease-in-out 0.3s;
@@ -53,6 +54,7 @@
 .setting-menu {
     color: #eee;
     padding: 0 1.5rem;
+    margin-left: 10px;
     font-size: 1.25em;
     display: flex;
     align-items: center;
@@ -72,9 +74,7 @@
         width:100vw;
         position: absolute;
         height: fit-content;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 70px;
+        padding: 25px 0 70px 15px;
         box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
         -webkit-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
         -moz-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
