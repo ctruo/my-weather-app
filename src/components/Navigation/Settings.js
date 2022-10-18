@@ -1,12 +1,51 @@
 import React from "react";
+import "./Settings.css";
+import { Link } from "react-router-dom";
 
-function Settings() {
+function Settings(props) {
+  const { setSettingsOpen } = props;
   return (
-    <ul>
-      <li>Setting 1</li>
-      <li>Setting 2</li>
-      <li>Setting 3</li>
-      <li>Setting 4</li>
+    <ul className="settings">
+      <li>
+        <Link
+          to="#"
+          onMouseOver={() => {
+            setSettingsOpen(true);
+          }}
+        >
+          Setting 1
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="#"
+          onMouseOver={() => {
+            setSettingsOpen(true);
+          }}
+        >
+          Setting 2
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="#"
+          onMouseOver={() => {
+            setSettingsOpen(true);
+          }}
+        >
+          Setting 3
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="#"
+          onMouseOver={() => {
+            props.setSettingsOpen(true);
+          }}
+        >
+          Setting 4
+        </Link>
+      </li>
     </ul>
   );
 }

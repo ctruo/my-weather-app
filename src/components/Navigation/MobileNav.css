@@ -15,8 +15,9 @@
 .mobile-list-line {
     display: block;
     height: 5px;
-    width:92%;
-    margin: 0 auto 20px auto;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
     background-color: rgba(255, 251, 251, 0.6);
     overflow: hidden;
 }
@@ -29,9 +30,10 @@
     -moz-box-shadow: -5px 1px 5px 0px rgba(0, 0, 0, 0.1);
     height: 100vh;
     width:300px;
-    padding: 25px 0 0 10px;
+    padding: 25px 10px 0 10px;
     position: absolute;
-    right: -50px;
+    right: -34px;
+    box-sizing: border-box;
 }
 
 .mobile-nav-list li {
@@ -48,10 +50,39 @@
     transition: color ease-in-out 0.3s;
 }
 
+.setting-menu {
+    color: #eee;
+    padding: 0 1.5rem;
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
 /*Hide mobile navbar for desktop*/
 @media screen and (min-width: 1024px) {
     .mobile-nav {
         display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .mobile-nav-list {
+        width:100vw;
+        position: absolute;
+        right: -35px;
+        height: fit-content;
+        padding-bottom: 70px;
+        box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-nav-list li {
+        padding-left: 12px;
+        font-size: 1rem;
     }
 
 }

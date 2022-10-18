@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import NavLink from "./NavLink";
 import "./MobileNav.css";
+import Settings from "./Settings";
 
 function Menu(props) {
+  const [settingsOpen, setSettingsOpen] = useState(false);
+
   const { closeMenu } = props;
 
   //open set to false for Settings because we want menu to stay open
@@ -20,8 +23,16 @@ function Menu(props) {
         open={true}
         closeMenu={closeMenu}
       />
-
-      <NavLink to="#" text="Settings" open={false} closeMenu={closeMenu} />
+      <li>
+        <div
+          className="setting-menu"
+          onClick={() => setSettingsOpen(!settingsOpen)}
+        >
+          <p>Settings</p>
+          <FontAwesomeIcon icon={faAngleDown}></FontAwesomeIcon>
+        </div>
+        {settingsOpen && <Settings />}
+      </li>
     </ul>
   );
 }
@@ -30,8 +41,6 @@ function MobileNav() {
   const [open, setOpen] = useState(false);
 
   const closeMenu = () => setOpen(false);
-
-  console.log(open);
 
   return (
     <div className="mobile-nav">
