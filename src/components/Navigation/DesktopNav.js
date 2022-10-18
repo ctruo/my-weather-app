@@ -8,13 +8,6 @@ import Settings from "./Settings";
 
 function DesktopNav() {
   const [settingsOpen, setSettingsOpen] = useState(false);
-  const [clicked, setClicked] = useState(false);
-
-  console.log(clicked);
-
-  //  onMouseOver={clicked ? () => setSettingsOpen(true) : null}
-  //       onMouseOut={() => {
-  //         setSettingsOpen(false);
 
   return (
     <ul className="desktop-nav">
@@ -25,17 +18,15 @@ function DesktopNav() {
       <li>
         <Link
           to="#"
+          className={settingsOpen ? "active-page" : null}
           onClick={() => {
             setSettingsOpen(!settingsOpen);
-            setClicked(!clicked);
           }}
         >
           <FontAwesomeIcon icon={faGear} className="fa-lg" />
         </Link>
 
-        {settingsOpen && (
-          <Settings setSettingsOpen={setSettingsOpen} setClicked={setClicked} />
-        )}
+        {settingsOpen && <Settings />}
       </li>
     </ul>
   );

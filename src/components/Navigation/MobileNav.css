@@ -65,15 +65,15 @@
     .mobile-nav {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 500px) {
     .mobile-nav-list {
         width:100vw;
         position: absolute;
-        right: -35px;
         height: fit-content;
+        padding-left: 0;
+        padding-right: 0;
         padding-bottom: 70px;
         box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
         -webkit-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
@@ -81,7 +81,6 @@
     }
 
     .mobile-nav-list li {
-        padding-left: 12px;
         font-size: 1rem;
     }
 
