@@ -1,6 +1,6 @@
 .mobile-nav {
     position: relative;
-    margin-right: 70px;
+    margin-right: 50px;
     height: 100%;
 }
 
@@ -9,7 +9,7 @@
     padding: 10px;
     color: #eee;
     background-color: rgba(238, 238, 238, 0);
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .mobile-list-line {
@@ -18,10 +18,11 @@
     width:92%;
     margin: 0 auto 20px auto;
     background-color: rgba(255, 251, 251, 0.6);
+    overflow: hidden;
 }
 
 .mobile-nav-list {
-    margin-top: 17px;
+    margin-top: 20px;
     background-color: rgb(42, 114, 165);
     box-shadow: -5px 1px 5px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: -5px 1px 5px 0px rgba(0, 0, 0, 0.1);
@@ -30,7 +31,7 @@
     width:300px;
     padding: 25px 0 0 10px;
     position: absolute;
-    right: -55px;
+    right: -50px;
 }
 
 .mobile-nav-list li {
