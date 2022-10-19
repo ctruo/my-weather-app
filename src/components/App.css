@@ -27,7 +27,7 @@
 [data-theme="night"] {
     --background-color: linear-gradient(rgb(20, 2, 83), rgb(69, 39, 202));
     --text-color: #eee;
-    --nav-color: rgb(42, 8, 136);
+    --nav-color: rgb(38, 9, 119);
     --mobile-nav-dropdown: rgb(57, 59, 167);
     --link-color: rgb(13, 233, 241);
 }
@@ -37,7 +37,7 @@
     --text-color:rgb(255, 255, 255);
     --nav-color: rgb(175, 174, 179);
     --mobile-nav-dropdown: rgb(119, 121, 122);
-    --link-color: rgb(76, 94, 197);
+    --link-color: rgb(40, 128, 201);
     --card-background: rgba(97, 95, 95, 0.2);
     --hover-color: rgba(51, 50, 50, 0.452);
 }
@@ -59,6 +59,7 @@ button {
     cursor: pointer;
 }
 
+/*--------Background gradient transition--------*/
 .bg-transition {
     position: fixed;
     height: 100vw;

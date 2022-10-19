@@ -5,17 +5,20 @@ import { faSun, faCloud, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { faSun as faSunReg } from "@fortawesome/free-regular-svg-icons";
 
 function setTheme(theme, bg) {
+  if (localStorage.getItem("theme") === theme) {
+    return;
+  }
   document.querySelector(".bg-transition").style.background = bg;
   document.querySelector(".bg-transition").style.opacity = 1;
 
   setTimeout(() => {
     localStorage.setItem("theme", theme);
     document.documentElement.setAttribute("data-theme", theme);
-  }, 200);
+  }, 100);
 
   setTimeout(
     () => (document.querySelector(".bg-transition").style.opacity = 0),
-    300
+    200
   );
 }
 

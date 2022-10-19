@@ -34,7 +34,7 @@
     position: absolute;
     right: -34px;
     box-sizing: border-box;
-    transition: background-color ease-in-out 0.1s;
+    transition: background-color ease-in-out 0.2s;
 }
 
 .mobile-nav-list li {

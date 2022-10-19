@@ -5,6 +5,18 @@ import Dashboard from "../pages/Dashboard";
 import Navbar from "./Navigation/Navbar";
 import { Route, Routes } from "react-router-dom";
 
+function loadTheme() {
+  const storedTheme = localStorage.getItem("theme");
+
+  if (storedTheme) {
+    localStorage.setItem("theme", storedTheme);
+    document.documentElement.setAttribute("data-theme", storedTheme);
+  } else {
+    //default to day theme
+    document.documentElement.setAttribute("data-theme", "day");
+  }
+}
+
 function App() {
   const [weatherData, setWeatherData] = useState({
     //weather data object
@@ -25,6 +37,8 @@ function App() {
   const [forecastData, setForecastData] = useState([]);
 
   let [dashboard, setDashboard] = useState([]);
+
+  loadTheme();
 
   return (
     <div>
