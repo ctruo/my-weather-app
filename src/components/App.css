@@ -1,11 +1,54 @@
+:root {
+    --background-color: linear-gradient(rgb(3, 109, 190), rgb(121, 214, 233));
+    --text-color: #eee;
+    --nav-color: rgb(50, 138, 202);
+    --mobile-nav-dropdown: rgb(42, 114, 165);
+    --hover-color: rgba(255, 255, 255, 0.452);
+    --card-background: rgba(255, 255, 255, 0.2);
+    --link-color: rgb(241, 200, 13);
+}
+
+[data-theme="day"] {
+    --background-color: linear-gradient(rgb(3, 109, 190), rgb(121, 214, 233));
+    --text-color: #eee;
+    --nav-color: rgb(50, 138, 202);
+    --mobile-nav-dropdown: rgb(42, 114, 165);
+    --link-color: rgb(241, 200, 13);
+}
+
+[data-theme="evening"] {
+    --background-color: linear-gradient(rgb(209, 125, 0), rgb(241, 203, 78));
+    --text-color: #eee;
+    --nav-color: rgb(207, 148, 37);
+    --mobile-nav-dropdown: rgb(139, 102, 32);
+    --link-color: rgb(247, 83, 7);
+}
+
+[data-theme="night"] {
+    --background-color: linear-gradient(rgb(20, 2, 83), rgb(69, 39, 202));
+    --text-color: #eee;
+    --nav-color: rgb(42, 8, 136);
+    --mobile-nav-dropdown: rgb(57, 59, 167);
+    --link-color: rgb(13, 233, 241);
+}
+
+[data-theme="cloud"] {
+    --background-color: linear-gradient(rgb(135, 136, 138), rgb(228, 235, 235));
+    --text-color:rgb(255, 255, 255);
+    --nav-color: rgb(175, 174, 179);
+    --mobile-nav-dropdown: rgb(119, 121, 122);
+    --link-color: rgb(76, 94, 197);
+    --card-background: rgba(97, 95, 95, 0.2);
+    --hover-color: rgba(51, 50, 50, 0.452);
+}
+
 html {
-    scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
 body {
-    background: linear-gradient(rgb(3, 109, 190), rgb(121, 214, 233));
+    background: var(--background-color);
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Montserrat', sans-serif;
@@ -16,3 +59,12 @@ button {
     cursor: pointer;
 }
 
+.bg-transition {
+    position: fixed;
+    height: 100vw;
+    width: 100vw;
+    margin: 0;
+    z-index:-3;
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
+}

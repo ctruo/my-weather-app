@@ -3,8 +3,8 @@ import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloudSunRain } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import DesktopNav from "./DesktopNav";
-import MobileNav from "./MobileNav";
+import DesktopNav from "./Desktop/DesktopNav";
+import MobileNav from "./Mobile/MobileNav";
 
 function Navbar() {
   return (

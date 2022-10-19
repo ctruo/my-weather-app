@@ -28,6 +28,7 @@ function App() {
 
   return (
     <div>
+      <div className="bg-transition"></div>
       <Navbar />
       <Routes>
         <Route

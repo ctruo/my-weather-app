@@ -7,7 +7,7 @@ header {
 }
 
 nav {
-    background-color: rgb(50, 138, 202);
+    background-color: var(--nav-color);
     height: 100px;
     width: 100%;
     display: flex;
@@ -19,18 +19,19 @@ nav {
     font-size: 1.25rem;
     position: sticky;
     top: 0;
+    transition: background-color ease-in-out 0.1s;
 }
 
 .logo {
     display:flex;
     align-items: center;
     margin-left: 5%;
-    color:rgb(255, 255, 255);
+    color: var(--text-color);
     transition:  color ease-in-out 0.3s;
 }
 
 .logo:hover {
-    color:rgb(235, 210, 101);
+    color:var(--link-color);
 }
 
 .active-page {

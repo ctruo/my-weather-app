@@ -13,18 +13,18 @@
 .initial-clock {
     font-size: 7rem;
     font-weight: 600;
-    color: #eee;
+    color: var(--text-color);
     position: relative;
     width: 550px;
 }
 
 .initial-ampm {
     font-size: 7rem;
-    color: #eee;
+    color: var(--text-color);
 }
 
 .initial-date {
-    color: #eee;
+    color: var(--text-color);
     font-size: 4rem;
     margin-top: -25px;
 }

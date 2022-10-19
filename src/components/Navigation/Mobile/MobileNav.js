@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import NavLink from "./NavLink";
+import NavLink from "../NavLink";
 import "./MobileNav.css";
-import Settings from "./Settings";
+import Settings from "../Settings";
 
 function Menu(props) {
   const [settingsOpen, setSettingsOpen] = useState(false);
