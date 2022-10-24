@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Settings.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faCloud, faMoon } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +8,7 @@ function setTheme(theme, bg) {
   if (localStorage.getItem("theme") === theme) {
     return;
   }
+
   document.querySelector(".bg-transition").style.background = bg;
   document.querySelector(".bg-transition").style.opacity = 1;
 
@@ -23,52 +24,61 @@ function setTheme(theme, bg) {
 }
 
 function Settings() {
+  const [activeTheme, setActiveTheme] = useState(false);
+
   return (
     <ul className="settings">
       <li>
         <h3>Theme</h3>
         <div className="theme-button-list">
           <button
-            className="theme-button day"
-            onClick={() =>
+            className={`theme-button day ${activeTheme ? "active-theme" : ""}`}
+            onClick={() => {
               setTheme(
                 "day",
                 "linear-gradient(rgb(3, 109, 190), rgb(121, 214, 233))"
-              )
-            }
+              );
+              setActiveTheme(true);
+            }}
           >
             <FontAwesomeIcon icon={faSunReg} className="fa-xl" />
           </button>
           <button
-            className="theme-button evening"
-            onClick={() =>
+            className={`theme-button evening 
+            ${activeTheme ? "active-theme" : ""}`}
+            onClick={() => {
               setTheme(
                 "evening",
                 "linear-gradient(rgb(209, 125, 0), rgb(241, 203, 78))"
-              )
-            }
+              );
+              setActiveTheme(true);
+            }}
           >
             <FontAwesomeIcon icon={faSun} className="fa-xl" />
           </button>
           <button
-            className="theme-button night"
-            onClick={() =>
+            className={`theme-button night 
+            ${activeTheme ? "active-theme" : ""}`}
+            onClick={() => {
               setTheme(
                 "night",
                 "linear-gradient(rgb(20, 2, 83), rgb(69, 39, 202))"
-              )
-            }
+              );
+              setActiveTheme(true);
+            }}
           >
             <FontAwesomeIcon icon={faMoon} className="fa-xl" />
           </button>
           <button
-            className="theme-button cloud"
-            onClick={() =>
+            className={`theme-button cloud 
+            ${activeTheme ? "active-theme" : ""}`}
+            onClick={() => {
               setTheme(
                 "cloud",
                 "linear-gradient(rgb(135, 136, 138), rgb(228, 235, 235))"
-              )
-            }
+              );
+              setActiveTheme(true);
+            }}
           >
             <FontAwesomeIcon icon={faCloud} className="fa-xl" />
           </button>

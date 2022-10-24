@@ -44,6 +44,10 @@
     color: rgb(187, 184, 189);
 }
 
+.active-theme {
+    color: rgb(0, 215, 253);
+}
+
 .temp-scale-list {
     position: absolute;
     display: flex;
