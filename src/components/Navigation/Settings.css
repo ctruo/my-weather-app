@@ -25,6 +25,7 @@
 .theme-button {
     background: none;
     border: none;
+    position: relative;
     transition: color ease-in-out 0.3s;
 }
 
@@ -44,8 +45,65 @@
     color: rgb(187, 184, 189);
 }
 
-.active-theme {
+.active-theme-day {
     color: rgb(0, 215, 253);
+}
+
+
+.active-theme-day::after {
+    position: absolute;
+    content: "";
+    height: 2.5px;
+    width: 18px;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(2, 180, 211);
+}
+
+.active-theme-evening {
+    color: rgb(253, 207, 0);
+}
+
+.active-theme-evening::after {
+    position: absolute;
+    content: "";
+    height: 2.5px;
+    width: 18px;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(207, 170, 3);
+}
+
+.active-theme-night {
+    color: rgb(131, 0, 253);
+}
+
+.active-theme-night::after {
+    position: absolute;
+    content: "";
+    height: 2.5px;
+    width: 18px;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(103, 2, 197);
+}
+
+.active-theme-cloud {
+    color: rgb(187, 184, 189);
+}
+
+.active-theme-cloud::after {
+    position: absolute;
+    content: "";
+    height: 2.5px;
+    width: 18px;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(150, 147, 151);
 }
 
 .temp-scale-list {
