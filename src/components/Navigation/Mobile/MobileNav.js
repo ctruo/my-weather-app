@@ -43,10 +43,11 @@ function Menu(props) {
           className="setting-menu"
           onClick={() => setSettingsOpen(!settingsOpen)}
         >
+          <div className="settings-links-bg"></div>
           <p>Settings</p>
           <FontAwesomeIcon icon={faAngleDown}></FontAwesomeIcon>
         </div>
-        {settingsOpen && <Settings />}
+        {<Settings settingsOpen={settingsOpen} />}
       </li>
     </ul>
   );

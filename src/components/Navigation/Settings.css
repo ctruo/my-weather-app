@@ -4,7 +4,8 @@
     margin: 0 auto;
     box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3)
+    -moz-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
+    z-index: -999;
 }
 
 .settings li {
@@ -151,7 +152,7 @@
         top: 100px;
         right: 0px;
         width:350px;
-        z-index: -999;
+       
     }
 
     .theme-button-list {
@@ -163,6 +164,7 @@
 @media screen and (max-width: 1024px) {
     .settings {
         width: 90%;
+        position: relative;
     }
     .settings li h3 {
         font-size: 0.75rem;
@@ -179,7 +181,7 @@
 
 @media screen and (max-width: 500px) {
     .theme-button-list {
-        gap: 40px;        
+        gap: 40px;      
     }
 
     .temp-scale-list {

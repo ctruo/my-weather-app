@@ -35,10 +35,12 @@
     right: -34px;
     box-sizing: border-box;
     transition: background-color ease-in-out 0.2s;
+    z-index: 10;
 }
 
 .mobile-nav-list li {
     list-style: none;
+
 }
 
 .mobile-nav-list li a {
@@ -63,6 +65,16 @@
     cursor: pointer;
 }
 
+.settings-links-bg {
+    background-color: var(--mobile-nav-dropdown);
+    top: 82px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+}
+
 /*Hide mobile navbar for desktop*/
 @media screen and (min-width: 1024px) {
     .mobile-nav {
@@ -74,7 +86,7 @@
     .mobile-nav-list {
         width:100vw;
         position: absolute;
-        height: fit-content;
+        height: auto;
         padding: 25px 0 70px 15px;
         box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
         -webkit-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
@@ -84,5 +96,10 @@
     .mobile-nav-list li {
         font-size: 1rem;
     }
+
+    .settings-links-bg {
+        top: 50px;
+    }
+
 
 }
