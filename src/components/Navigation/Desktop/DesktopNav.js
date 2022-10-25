@@ -5,6 +5,7 @@ import NavLink from "../NavLink";
 import { Link } from "react-router-dom";
 import "./DesktopNav.css";
 import Settings from "../Settings";
+import { motion } from "framer-motion";
 
 function DesktopNav() {
   const [settingsOpen, setSettingsOpen] = useState(false);
@@ -27,7 +28,15 @@ function DesktopNav() {
             setSettingsOpen(!settingsOpen);
           }}
         >
-          <FontAwesomeIcon icon={faGear} className="fa-lg" />
+          <motion.div
+            animate={{
+              rotate: settingsOpen ? 180 : 0,
+              color: settingsOpen ? "rgb(68, 65, 65)" : "#eee",
+            }}
+            transition={{ duration: 0.5 }}
+          >
+            <FontAwesomeIcon icon={faGear} className="fa-lg" />
+          </motion.div>
         </Link>
 
         <Settings settingsOpen={settingsOpen} />

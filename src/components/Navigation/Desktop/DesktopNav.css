@@ -28,6 +28,10 @@
     background-color: var(--hover-color);
 }
 
+.fa-lg {
+    transition: color ease-in-out 0.1s;
+}
+
 /*Hide desktop navbar for mobile*/
 @media screen and (max-width: 1024px) {
     .desktop-nav {
