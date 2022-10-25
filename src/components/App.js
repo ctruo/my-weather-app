@@ -17,6 +17,17 @@ function loadTheme() {
   }
 }
 
+function loadTempScale() {
+  const storedTempScale = localStorage.getItem("tempScale");
+
+  if (storedTempScale) {
+    localStorage.setItem("storedTempScale");
+  } else {
+    //default to Fahrenheit scale
+    localStorage.setItem("storedTempScale", "F");
+  }
+}
+
 function App() {
   const [weatherData, setWeatherData] = useState({
     //weather data object
@@ -39,6 +50,7 @@ function App() {
   let [dashboard, setDashboard] = useState([]);
 
   loadTheme();
+  loadTempScale();
 
   return (
     <div>

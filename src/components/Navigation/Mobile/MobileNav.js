@@ -5,6 +5,21 @@ import NavLink from "../NavLink";
 import "./MobileNav.css";
 import Settings from "../Settings";
 
+function MobileNav() {
+  const [open, setOpen] = useState(false);
+
+  const closeMenu = () => setOpen(false); //closes menu when switching to new page on mobile
+
+  return (
+    <div className="mobile-nav">
+      <button className="hamburger" onClick={() => setOpen(!open)}>
+        <FontAwesomeIcon icon={faBars} className="fa-3x"></FontAwesomeIcon>
+      </button>
+      {open && <Menu closeMenu={closeMenu} />}
+    </div>
+  );
+}
+
 function Menu(props) {
   const [settingsOpen, setSettingsOpen] = useState(false);
 
@@ -34,21 +49,6 @@ function Menu(props) {
         {settingsOpen && <Settings />}
       </li>
     </ul>
-  );
-}
-
-function MobileNav() {
-  const [open, setOpen] = useState(false);
-
-  const closeMenu = () => setOpen(false);
-
-  return (
-    <div className="mobile-nav">
-      <button className="hamburger" onClick={() => setOpen(!open)}>
-        <FontAwesomeIcon icon={faBars} className="fa-3x"></FontAwesomeIcon>
-      </button>
-      {open && <Menu closeMenu={closeMenu} />}
-    </div>
   );
 }
 

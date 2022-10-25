@@ -20,7 +20,7 @@
     transition: color ease-in-out 0.3s;
 }
 
-.desktop-nav li:hover {
+.desktop-nav-li:hover {
     background-color: var(--hover-color);
 }
 

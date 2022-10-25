@@ -11,11 +11,15 @@ function DesktopNav() {
 
   return (
     <ul className="desktop-nav">
-      <NavLink to="/" text="Home" />
+      <NavLink desktopClass="desktop-nav-li" to="/" text="Home" />
 
-      <NavLink to="/my-dashboard" text="MyDashboard" />
+      <NavLink
+        desktopClass="desktop-nav-li"
+        to="/my-dashboard"
+        text="MyDashboard"
+      />
 
-      <li>
+      <li className="desktop-nav-li">
         <Link
           to="#"
           className={settingsOpen ? "active-page" : null}
