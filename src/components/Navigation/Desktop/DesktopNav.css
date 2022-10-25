@@ -1,13 +1,17 @@
 .desktop-nav {
     display: flex;
     align-items: center;
-    margin: 0 5%;
+    margin: 0;
+    padding-right: 7%;
+    background-color: var(--nav-color);
+    transition: background-color ease-in-out 0.2s;
 }
 
 .desktop-nav li {
     list-style: none;
     height: 100%;
     transition: background-color ease-in-out 0.3s;
+   
 }
 
 .desktop-nav li a {

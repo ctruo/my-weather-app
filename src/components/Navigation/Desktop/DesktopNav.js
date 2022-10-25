@@ -30,7 +30,7 @@ function DesktopNav() {
           <FontAwesomeIcon icon={faGear} className="fa-lg" />
         </Link>
 
-        {settingsOpen && <Settings />}
+        <Settings settingsOpen={settingsOpen} />
       </li>
     </ul>
   );

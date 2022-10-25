@@ -55,7 +55,10 @@ function App() {
   return (
     <div>
       <div className="bg-transition"></div>
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
+
       <Routes>
         <Route
           path="/"

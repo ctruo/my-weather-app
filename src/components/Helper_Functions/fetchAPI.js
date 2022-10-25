@@ -30,7 +30,6 @@ function mainData(url, setWeatherData) {
     .catch((error) => {
       console.log(error);
     });
-  //fetch API finished
 }
 
 //fetch API for forecastData, filter, and set forecastData state
@@ -45,7 +44,6 @@ function forecastData(url, setForecastData) {
       setForecastData(filteredData);
     })
     .catch((error) => console.log(error));
-  //fetch API finished
 }
 
 //get one temp value for forecastData, uses 12:00:00 as time to get temp
