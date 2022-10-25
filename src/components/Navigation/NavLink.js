@@ -23,7 +23,7 @@ function NavLink(props) {
 
   const active = useMatch({ path: resolvedPath.pathname, end: true });
 
-  //onClick is only used to close sidebar nav on mobile
+  //onClick and open prop is only used to close sidebar nav on mobile when navigating to another page
   return (
     <li className={setClass(desktopClass, active)}>
       <Link to={to} onClick={() => open && closeMenu()}>

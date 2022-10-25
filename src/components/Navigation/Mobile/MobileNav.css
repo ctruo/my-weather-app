@@ -35,7 +35,7 @@
     right: -34px;
     box-sizing: border-box;
     transition: background-color ease-in-out 0.2s;
-    z-index: 10;
+    z-index: 0;
 }
 
 .mobile-nav-list li {
@@ -73,6 +73,7 @@
     height: 200px;
     position: absolute;
     z-index: -1;
+    transition: background-color ease-in-out 0.2s;
 }
 
 /*Hide mobile navbar for desktop*/
@@ -82,7 +83,8 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+/*Phone*/
+@media screen and (max-width: 550px) {
     .mobile-nav-list {
         width:100vw;
         position: absolute;
@@ -91,6 +93,7 @@
         box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
         -webkit-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
         -moz-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
+        z-index: -1;
     }
 
     .mobile-nav-list li {
@@ -100,6 +103,5 @@
     .settings-links-bg {
         top: 50px;
     }
-
 
 }

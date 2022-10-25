@@ -19,6 +19,9 @@ function Navbar() {
         </Link>
 
         <DesktopNav id="desktop-navbar" />
+
+        {/* Used for placing mobile nav dropdown under navbar for phone view*/}
+        <div className="phone-nav-bg"></div>
         <MobileNav id="mobile-navbar" />
       </nav>
     </header>

@@ -152,7 +152,6 @@
         top: 100px;
         right: 0px;
         width:350px;
-       
     }
 
     .theme-button-list {
@@ -179,7 +178,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .theme-button-list {
         gap: 40px;      
     }

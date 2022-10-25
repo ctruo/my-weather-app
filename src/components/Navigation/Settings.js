@@ -36,9 +36,9 @@ function Settings(props) {
       {settingsOpen && (
         <motion.ul
           className="settings"
-          initial={{ opacity: 0, y: "-100%" }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 1, y: "-100%" }}
+          initial={{ y: "-100%" }}
+          animate={{ y: 0 }}
+          exit={{ y: "-100%" }}
           transition={{ duration: 0.5 }}
         >
           <li>
