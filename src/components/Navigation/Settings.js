@@ -5,13 +5,13 @@ import { faSun, faCloud, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { faSun as faSunReg } from "@fortawesome/free-regular-svg-icons";
 import { motion, AnimatePresence } from "framer-motion";
 
-function setTheme(theme, bg) {
+function setTheme(theme, bgColor) {
   if (localStorage.getItem("theme") === theme) {
     return;
   }
 
   //fading gradient background for smooth transition
-  document.querySelector(".bg-transition").style.background = bg;
+  document.querySelector(".bg-transition").style.background = bgColor;
   document.querySelector(".bg-transition").style.opacity = 1;
 
   //set theme after fading into new color
@@ -99,14 +99,14 @@ function Settings(props) {
               </button>
             </div>
           </li>
-          <li>
+          {/* <li>      //WORK IN PROGRESS
             <h3>Temperature Scale</h3>
             <div className="temp-scale-list">
               <button className="temp-scale-button">{`\u00B0F`}</button>
               <b className="temp-scale-slash"> / </b>
               <button className="temp-scale-button">{`\u00B0C`}</button>
             </div>
-          </li>
+          </li> */}
         </motion.ul>
       )}
     </AnimatePresence>

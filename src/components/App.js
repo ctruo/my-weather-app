@@ -17,16 +17,17 @@ function loadTheme() {
   }
 }
 
-function loadTempScale() {
-  const storedTempScale = localStorage.getItem("tempScale");
+// WORK IN PROGRESS
+// function loadTempScale() {
+//   const storedTempScale = localStorage.getItem("tempScale");
 
-  if (storedTempScale) {
-    localStorage.setItem("storedTempScale");
-  } else {
-    //default to Fahrenheit scale
-    localStorage.setItem("storedTempScale", "F");
-  }
-}
+//   if (storedTempScale) {
+//     localStorage.setItem("storedTempScale");
+//   } else {
+//     //default to Fahrenheit scale
+//     localStorage.setItem("storedTempScale", "F");
+//   }
+// }
 
 function App() {
   const [weatherData, setWeatherData] = useState({
@@ -50,7 +51,7 @@ function App() {
   let [dashboard, setDashboard] = useState([]);
 
   loadTheme();
-  loadTempScale();
+  // loadTempScale();
 
   return (
     <div>

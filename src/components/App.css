@@ -19,7 +19,7 @@
 [data-theme="evening"] {
     --background-color: linear-gradient(rgb(209, 125, 0), rgb(241, 203, 78));
     --text-color: #eee;
-    --nav-color: rgb(207, 148, 37);
+    --nav-color: rgb(197, 139, 31);
     --mobile-nav-dropdown: rgb(139, 102, 32);
     --link-color: rgb(247, 83, 7);
 }
