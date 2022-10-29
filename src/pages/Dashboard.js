@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/Dashboard/Dashboard.css";
+import "./Dashboard.css";
 import DashboardCard from "../components/Dashboard/DashboardCard";
 import DateTime from "../components/Date_Time/DateTime";
 import { Link } from "react-router-dom";

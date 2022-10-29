@@ -1,5 +1,5 @@
 .card {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--card-background);
     box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 4px 4px 10px -4px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.1);
@@ -14,7 +14,7 @@
 
 .weekday {
     font-size: 1.5rem;
-    color: #eee;
+    color: var(--text-color);
     width: 20%;
 }
 

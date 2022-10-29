@@ -2,7 +2,7 @@
     align-self: center;
     margin: 0 auto;
     text-align: center;
-    color:#eee;
+    color:var(--text-color);
     font-size: 0.9rem;
 }
 

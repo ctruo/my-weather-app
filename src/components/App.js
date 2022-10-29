@@ -5,6 +5,30 @@ import Dashboard from "../pages/Dashboard";
 import Navbar from "./Navigation/Navbar";
 import { Route, Routes } from "react-router-dom";
 
+function loadTheme() {
+  const storedTheme = localStorage.getItem("theme");
+
+  if (storedTheme) {
+    localStorage.setItem("theme", storedTheme);
+    document.documentElement.setAttribute("data-theme", storedTheme);
+  } else {
+    //default to day theme
+    document.documentElement.setAttribute("data-theme", "day");
+  }
+}
+
+// WORK IN PROGRESS
+// function loadTempScale() {
+//   const storedTempScale = localStorage.getItem("tempScale");
+
+//   if (storedTempScale) {
+//     localStorage.setItem("storedTempScale");
+//   } else {
+//     //default to Fahrenheit scale
+//     localStorage.setItem("storedTempScale", "F");
+//   }
+// }
+
 function App() {
   const [weatherData, setWeatherData] = useState({
     //weather data object
@@ -26,9 +50,16 @@ function App() {
 
   let [dashboard, setDashboard] = useState([]);
 
+  loadTheme();
+  // loadTempScale();
+
   return (
     <div>
-      <Navbar />
+      <div className="bg-transition"></div>
+      <header>
+        <Navbar />
+      </header>
+
       <Routes>
         <Route
           path="/"

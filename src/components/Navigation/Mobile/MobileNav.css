@@ -5,10 +5,10 @@
 }
 
 .hamburger {
+    background: none;
     border: none;
     padding: 10px;
-    color: #eee;
-    background-color: rgba(238, 238, 238, 0);
+    color: var(--text-color);
     margin-top: 20px;
 }
 
@@ -24,35 +24,40 @@
 
 .mobile-nav-list {
     margin-top: 20px;
-    background-color: rgb(42, 114, 165);
+    background-color: var(--mobile-nav-dropdown);
     box-shadow: -5px 1px 5px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: -5px 1px 5px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: -5px 1px 5px 0px rgba(0, 0, 0, 0.1);
     height: 100vh;
     width:300px;
-    padding: 25px 10px 0 10px;
+    padding: 25px 0;
     position: absolute;
     right: -34px;
     box-sizing: border-box;
+    transition: background-color ease-in-out 0.2s;
+    z-index: 0;
 }
 
 .mobile-nav-list li {
     list-style: none;
+
 }
 
 .mobile-nav-list li a {
     text-decoration: none;
-    color: #eee;
+    color: var(--text-color);
     padding: 1.5rem;
-    font-size: 1.25em;
+    margin-left: 10px;
+    font-size: 1.15em;
     display: flex;
     align-self: center;
     transition: color ease-in-out 0.3s;
 }
 
 .setting-menu {
-    color: #eee;
+    color: var(--text-color);
     padding: 0 1.5rem;
+    margin-left: 10px;
     font-size: 1.25em;
     display: flex;
     align-items: center;
@@ -60,29 +65,43 @@
     cursor: pointer;
 }
 
+.settings-links-bg {
+    background-color: var(--mobile-nav-dropdown);
+    top: 82px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    transition: background-color ease-in-out 0.2s;
+}
+
 /*Hide mobile navbar for desktop*/
 @media screen and (min-width: 1024px) {
     .mobile-nav {
         display: none;
     }
-
 }
 
-@media screen and (max-width: 500px) {
+/*Phone*/
+@media screen and (max-width: 550px) {
     .mobile-nav-list {
         width:100vw;
         position: absolute;
-        right: -35px;
-        height: fit-content;
-        padding-bottom: 70px;
+        height: auto;
+        padding: 25px 0 70px 15px;
         box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
         -webkit-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
         -moz-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
+        z-index: -1;
     }
 
     .mobile-nav-list li {
-        padding-left: 12px;
         font-size: 1rem;
+    }
+
+    .settings-links-bg {
+        top: 50px;
     }
 
 }
