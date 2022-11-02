@@ -27,11 +27,11 @@
 .clock {
     position: relative;
     margin-left: 15px;
-    width: 145px;
+    width: 135px;
 }
 
 /*-------Prevents overflow of clock--------*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .date-time {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -58,11 +58,11 @@
     }
 
     .clock {
-        width: 115px;   
+        width: 100px;   
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 430px) {
     .date-time * {
         font-size: 1.2rem;    
     }
@@ -73,6 +73,6 @@
     }
 
     .clock {
-        width: 95px;   
+        width: 85px;   
     }
 }

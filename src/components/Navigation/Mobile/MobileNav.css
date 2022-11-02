@@ -1,6 +1,6 @@
 .mobile-nav {
     position: relative;
-    margin-right: 50px;
+
     height: 100%;
 }
 
@@ -10,6 +10,7 @@
     padding: 10px;
     color: var(--text-color);
     margin-top: 20px;
+    margin-right: 50px;
 }
 
 .mobile-list-line {
@@ -26,13 +27,14 @@
     margin-top: 20px;
     background-color: var(--mobile-nav-dropdown);
     box-shadow: -5px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
     -webkit-box-shadow: -5px 1px 5px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: -5px 1px 5px 0px rgba(0, 0, 0, 0.1);
     height: 100vh;
-    width:300px;
+    width: 300px;
     padding: 25px 0;
     position: absolute;
-    right: -34px;
+    right: 0px;
     box-sizing: border-box;
     transition: background-color ease-in-out 0.2s;
     z-index: 0;
@@ -85,10 +87,14 @@
 
 /*Phone*/
 @media screen and (max-width: 550px) {
+    .hamburger {
+        margin-right: 20px;
+    }
     .mobile-nav-list {
         width:100vw;
         position: absolute;
         height: auto;
+        box-sizing: border-box;
         padding: 25px 0 70px 15px;
         box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
         -webkit-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
