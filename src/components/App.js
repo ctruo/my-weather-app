@@ -9,7 +9,6 @@ function loadTheme() {
   const storedTheme = localStorage.getItem("theme");
 
   if (storedTheme) {
-    localStorage.setItem("theme", storedTheme);
     document.documentElement.setAttribute("data-theme", storedTheme);
   } else {
     //default to day theme
@@ -31,7 +30,6 @@ function loadTheme() {
 
 function App() {
   const [weatherData, setWeatherData] = useState({
-    //weather data object
     city: "",
     country: "",
     iconURL: "",

@@ -1,10 +1,11 @@
 import { v4 as uuidv4 } from "uuid";
 
-function mainData(url, setWeatherData) {
+function mainData(url, setWeatherData, setValidSearch) {
   fetch(url)
     .then((response) => {
-      if (response.ok) return response.json();
-      else throw new Error("Status code error :" + response.status);
+      if (response.ok) {
+        return response.json();
+      } else throw new Error("Status code error:" + response.status);
     })
     .then((data) => {
       const queryData = {
@@ -25,10 +26,12 @@ function mainData(url, setWeatherData) {
         sunset: data.sys.sunset,
         humidity: data.main.humidity,
       };
+      setValidSearch(true);
       setWeatherData(queryData);
     })
     .catch((error) => {
-      console.log(error);
+      setValidSearch(false);
+      console.log("MAIN DATA " + error);
     });
 }
 
@@ -37,13 +40,13 @@ function forecastData(url, setForecastData) {
   fetch(url)
     .then((response) => {
       if (response.ok) return response.json();
-      else throw new Error("Status code error :" + response.status);
+      else throw new Error("Status code error:" + response.status);
     })
     .then((data) => {
       let filteredData = filter(data.list);
       setForecastData(filteredData);
     })
-    .catch((error) => console.log(error));
+    .catch((error) => console.log("FORECAST DATA " + error));
 }
 
 //get one temp value for forecastData, uses 12:00:00 as time to get temp

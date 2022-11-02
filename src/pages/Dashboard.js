@@ -4,21 +4,6 @@ import DashboardCard from "../components/Dashboard/DashboardCard";
 import DateTime from "../components/Date_Time/DateTime";
 import { Link } from "react-router-dom";
 
-function removeDuplicates(data) {
-  //removes duplicate locations for dashboard
-  const dataCities = [];
-  data.forEach((element) => dataCities.push(element.city));
-  const uniqueCities = [...new Set(dataCities)];
-
-  const filteredData = [];
-
-  for (let i = 0; i < uniqueCities.length; i++) {
-    filteredData.push(data.find((element) => element.city === uniqueCities[i]));
-  }
-
-  return filteredData;
-}
-
 function noCardDisplay() {
   const string = (
     <div className="no-card-display">
@@ -38,7 +23,11 @@ function noCardDisplay() {
 }
 
 function Dashboard(props) {
-  const filteredData = removeDuplicates(props.dashboard);
+  const filteredData = props.dashboard;
+
+  // WORK IN PROGRESS - local storage for dashboard
+  // const storedDashboard = localStorage.getItem("dashboard");
+  // console.log(JSON.parse(storedDashboard));
 
   return (
     <div className="dashboard">

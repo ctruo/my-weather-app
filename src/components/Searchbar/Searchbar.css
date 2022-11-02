@@ -6,8 +6,12 @@
 #searchForm {
     display: flex;
     align-items: center;
+    width: 800px;
+    left: 50%;
+    transform: translate(-50%);
     height: 50px;
     justify-content: center;
+    position: relative;
 }
 
 #searchField {
@@ -31,13 +35,17 @@
     outline: none;
 }
 
+.invalid-search {
+    border: 2.85px solid rgb(255, 0, 0) !important;
+}
+
 .searchBar button {
-    background-color: rgb(235, 229, 229);
     border-style: none;
+    background-color: rgb(235, 229, 229);
     border-radius: 0 5rem 5rem 0;
     height: 100%;
     padding: 0 40px;
-    margin-left: -4px;
+    margin-left: -5px;
     vertical-align: middle;
     box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.44);
     -webkit-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.44);
@@ -49,28 +57,71 @@
     background-color: rgb(201, 198, 198);
 }
 
+.invalid-search-button {
+    border: 2.85px solid  rgb(255, 0, 0) !important;
+    border-left: none !important;
+}
+
+.invalid-message {
+    position: absolute;
+    background-color: var(--invalid-background);
+    top: 65px;
+    left: 70px;
+    width: 225px;
+    padding-left: 45px;
+    box-sizing: border-box;
+    border-radius: 0 1.5rem 1.5rem 1.5rem;
+    box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.44);
+}
+
+.invalid-message h3 {
+    color: var(--invalid-text);
+}
+
 /*--------SEARCH BAR END--------*/
 
-@media screen and (max-width: 600px) {
-    #searchField {
-        transform: scale(0.7);
-        margin-left: -50px;
+@media screen and (max-width: 920px) {
+    #searchForm {
+        width: 600px;
     }
 
-    .searchBar button {
-        transform: scale(0.7);
-        margin-left: -100px;
+    #searchField {
+        width: 500px;
     }
 }
 
-@media screen and (max-width: 430px) {
-    #searchField {
-        transform: scale(0.5);
-        margin-left: -75px;
+@media screen and (max-width: 675px) {
+    #searchForm {
+        width: 450px;
     }
 
-    .searchBar button {
-        transform: scale(0.5);
-        margin-left: -130px;
+    #searchField {
+        width: 350px;
+    }
+    
+    .invalid-message {
+        top: 50px;
+        left: 20px;
+        transform: scale(0.75);
+    }
+}
+
+@media screen and (max-width: 475px) {
+    #searchForm {
+        width: 325px;
+    }
+
+    #searchField {
+        width: 225px;
+        padding-left: 2rem;
+        font-size: 1rem;
+    }
+    
+    .invalid-message {
+        top: 50px;
+        left: 5px;
+        transform: scale(0.6);
     }
 }
