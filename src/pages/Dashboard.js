@@ -24,8 +24,10 @@ function noCardDisplay() {
 
 function Dashboard(props) {
   const filteredData = props.dashboard;
-  const storedDashboard = localStorage.getItem("dashboard");
-  console.log(JSON.parse(storedDashboard));
+
+  // WORK IN PROGRESS - local storage for dashboard
+  // const storedDashboard = localStorage.getItem("dashboard");
+  // console.log(JSON.parse(storedDashboard));
 
   return (
     <div className="dashboard">

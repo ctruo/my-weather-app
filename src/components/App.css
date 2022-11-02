@@ -6,6 +6,8 @@
     --hover-color: rgba(255, 255, 255, 0.452);
     --card-background: rgba(255, 255, 255, 0.2);
     --link-color: rgb(241, 200, 13);
+    --invalid-background: rgba(238, 238, 238, 0.658);
+    --invalid-text: rgb(0, 0, 0);
 }
 
 [data-theme="day"] {
@@ -40,6 +42,8 @@
     --link-color: rgb(40, 128, 201);
     --card-background: rgba(97, 95, 95, 0.2);
     --hover-color: rgba(51, 50, 50, 0.452);
+    --invalid-background: rgba(68, 66, 66, 0.925);
+    --invalid-text: rgb(255, 255, 255);
 }
 
 html {

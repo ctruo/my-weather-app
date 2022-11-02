@@ -24,12 +24,13 @@ function removeDuplicates(data) {
 function addToDash(dashboard, setDashboard, weatherData) {
   const filteredData = removeDuplicates([...dashboard, weatherData]); //removes duplicates
   setDashboard(filteredData);
-  localStorage.setItem("dashboard", JSON.stringify(filteredData)); //saves dashboard data to local storage
+
+  //WORK IN PROGRESS - local storage for dashboard
+  // localStorage.setItem("dashboard", JSON.stringify(filteredData)); //saves dashboard data to local storage
 }
 
 function MainCard(props) {
-  const { weatherData, forecastData, setDashboard } = props;
-  const { dashboard } = props; //non constant dashboard that we need to update
+  const { weatherData, forecastData, setDashboard, dashboard } = props;
 
   const {
     city,
