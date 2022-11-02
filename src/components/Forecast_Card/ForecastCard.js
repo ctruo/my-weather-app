@@ -16,8 +16,18 @@ function ForecastCard(props) {
 
   let iconURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
 
-  let options = { weekday: "long" };
-  let weekday = new Date(dt_txt).toLocaleDateString("en-us", options);
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  let currDay = new Date(dt_txt).getDay();
+  const weekday = days[currDay];
 
   return (
     <div className="card">
