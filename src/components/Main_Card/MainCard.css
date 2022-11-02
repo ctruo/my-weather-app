@@ -38,7 +38,7 @@
 /*--------Content---------*/
 .main-display {
     display: flex;
-    gap: 2%;
+    gap: 4%;
     height: 400px;
 }
 
@@ -167,6 +167,12 @@
         font-size: 1rem;
         padding: 5px 25px;
     }
+
+    .temp-description p {
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-top: -40px;
+        }
 
     .more-details {
         grid-template-columns: repeat(3, 1fr);
