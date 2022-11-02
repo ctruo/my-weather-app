@@ -5,6 +5,28 @@ import ForecastCard from "../Forecast_Card/ForecastCard";
 import DateTime from "../Date_Time/DateTime";
 import convertTime from "../Helper_Functions/converTimeFunction";
 
+function removeDuplicates(data) {
+  //removes duplicate locations for dashboard
+  const dataCities = [];
+  data.forEach((element) => dataCities.push(element.city));
+  const uniqueCities = [...new Set(dataCities)];
+
+  const filteredData = [];
+
+  for (let i = 0; i < uniqueCities.length; i++) {
+    filteredData.push(data.find((element) => element.city === uniqueCities[i]));
+  }
+
+  return filteredData;
+}
+
+//adds current main data to dashboard when button is clicked
+function addToDash(dashboard, setDashboard, weatherData) {
+  const filteredData = removeDuplicates([...dashboard, weatherData]); //removes duplicates
+  setDashboard(filteredData);
+  localStorage.setItem("dashboard", JSON.stringify(filteredData)); //saves dashboard data to local storage
+}
+
 function MainCard(props) {
   const { weatherData, forecastData, setDashboard } = props;
   const { dashboard } = props; //non constant dashboard that we need to update
@@ -46,7 +68,7 @@ function MainCard(props) {
           <div className="more-details">
             <button
               className="dash-button"
-              onClick={() => setDashboard([...dashboard, weatherData])} //on click append current main display data to dashboard
+              onClick={() => addToDash(dashboard, setDashboard, weatherData)} //on click append current main display data to dashboard
               type="submit"
             >
               Add to MyDashboard

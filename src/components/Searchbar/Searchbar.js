@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "./Searchbar.css";
-import { mainData, forecastData } from "../Helper_Functions/fetchAPI";
+import { mainData, forecastData } from "../Helper_Functions/fetchAPI"; //functions to get data from API call
 
 function Searchbar(props) {
   const [search, setSearch] = useState("");
