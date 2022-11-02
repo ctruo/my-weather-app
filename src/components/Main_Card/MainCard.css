@@ -38,7 +38,7 @@
 /*--------Content---------*/
 .main-display {
     display: flex;
-    gap: 4%;
+    gap: 3%;
     height: 400px;
 }
 
@@ -116,6 +116,7 @@
     cursor: pointer;
     font-size: 1.3rem;
     height: 50px;
+    width: fit-content;
     padding: 10px 50px;
     position: absolute;
     right: 40px;

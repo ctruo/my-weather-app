@@ -26,7 +26,8 @@ function ForecastCard(props) {
     "Saturday",
   ];
 
-  let currDay = new Date(dt_txt).getDay();
+  const dateFormatted = dt_txt.replace(/-/g, "/");
+  let currDay = new Date(dateFormatted).getDay();
   const weekday = days[currDay];
 
   return (
