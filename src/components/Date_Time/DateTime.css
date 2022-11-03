@@ -27,7 +27,7 @@
 .clock {
     position: relative;
     margin-left: 15px;
-    width: 150px;
+    width: 140px;
 }
 
 /*-------Prevents overflow of clock--------*/
@@ -58,7 +58,7 @@
     }
 
     .clock {
-        width: 115px;   
+        width: 105px;   
     }
 }
 
@@ -73,6 +73,6 @@
     }
 
     .clock {
-        width: 100px;   
+        width: 85px;   
     }
 }
