@@ -63,12 +63,15 @@ Four different themes are available to select from the settings:
 |----|---------|
 | <img width="100%" src="img/desktop/desktop-forecast.png"> | <img width="100%" src="img/desktop/desktop-dash.png"> | 
 
+<br />
 
 ## Tablet ##
 | <img width="50%" src="img/tablet/tablet-home.png"> | <img width="50%" src="img/tablet/tablet-main.png"> | 
 |----|---------|
 | <p align="center" width="100%"><img width="50%" src="img/tablet/tablet-forecast.png"></p> | <p align="center" width="100%"><img width="50%" src="img/tablet/tablet-dash.png"></p>| 
 |<p align="center" width="100%"><img width="50%" src="img/tablet/tablet-nav.png"></p>|
+
+<br />
 
 ## Mobile ##
 | <img width="30%" src="img/phone/phone-home.png"> | <img width="30%" src="img/phone/phone-main.png"> | 
