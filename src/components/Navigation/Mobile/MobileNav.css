@@ -10,7 +10,7 @@
     padding: 10px;
     color: var(--text-color);
     margin-top: 20px;
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 .mobile-list-line {
@@ -88,7 +88,7 @@
 /*Phone*/
 @media screen and (max-width: 550px) {
     .hamburger {
-        margin-right: 20px;
+        margin-right: 40px;
     }
     .mobile-nav-list {
         width:100vw;

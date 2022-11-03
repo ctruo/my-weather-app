@@ -14,6 +14,7 @@ function Searchbar(props) {
     if (search === "") {
       //empty input
       setValidSearch(false);
+      e.preventDefault();
       return;
     }
 
