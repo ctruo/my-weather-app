@@ -28,7 +28,7 @@ Displays the current date and time.
 ## Location searchbar ##
 Users can view the current weather and 5 day forecast for a location using the searchbar. Invalid input is indicated when there searchbar is empty or an invalid location.
 <p align="center" width="100%">
-  <img src="img/invalid-input.png" width="30%" />
+  <img src="img/invalid-input.png" width="50%" />
 </p>
 
 ## Current Weather Display ##
