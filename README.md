@@ -1,5 +1,7 @@
 # MyWeather Application
 
+### Live: (https://ctruo.github.io/my-weather-app/) ###
+
 ReactJS Weather application that displays the current weather/5-day forecast of the queried location. Users can add locations to a dashboard to view weather data of multiple locations at once.
 
 This application fetches weather data from the OpenWeather Current Weather and 5-day 3-hour Forecast APIs (https://openweathermap.org/api).
@@ -43,7 +45,7 @@ Displays the weather forecast for the next 5 days with extra details.
 Users can add locations they want to save on a dashboard. All weather info in the current weather display is included on each dashboard card. Users can delete locations from the dashboard.
 
 ## Theme selector ##
-Four different themes are available to select from the settings:
+Four different themes are available to select from the settings. Theme is stored in local storage to save whatever theme the user selects.
 
 |Day | Evening |
 |----|---------|
